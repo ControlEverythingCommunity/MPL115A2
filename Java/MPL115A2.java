@@ -53,6 +53,6 @@ public class MPL115A2
 		// Output data to screen
 		System.out.printf("Pressure : %.2f kPa %n", pressure);
 		System.out.printf("Temperature in Celsius : %.2f C %n", cTemp);
-		System.out.printf("Temperature in Farhenheit : %.2f F %n", fTemp); 
+		System.out.printf("Temperature in Fahrenheit : %.2f F %n", fTemp); 
 	}
 }
