@@ -112,8 +112,9 @@ void loop()
 
   // Output data to dashboard
   Particle.publish("Pressure : ", String(pressure));
+  delay(100);
   Particle.publish("Temperature in Celsius : ", String(cTemp));
+  delay(100);
   Particle.publish("Temperature in Fahrenheit : ", String(fTemp));
-  delay(500);
+  delay(1000);
 }
-
