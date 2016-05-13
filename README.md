@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: MPL115A2_I2CS]
 
 https://www.controleverything.com/products
 
-This Sample code can be used with Raspberry pi, Arduino and Particle.
+This Sample code can be used with Raspberry pi, Arduino, Particle and Beaglebone Black.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -62,4 +62,17 @@ Verify and flash the code on your Photon. Code output is shown in logs at dashbo
 
 https://dashboard.particle.io/user/logs
 
+
+##C
+
+Download (or git pull) the code in Beaglebone Black.
+
+Compile the c program.
+```cpp
+$>gcc MPL115A2.c -o MPL115A2
+```
+Run the c program.
+```cpp
+$>./MPL115A2
+```
 #####The code output is the pressure in kPa and temperature reading in degree celsius and fahrenheit.
