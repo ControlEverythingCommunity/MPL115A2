@@ -11,9 +11,9 @@
 #define Addr 0x60
 
 unsigned int data[8];
-float a1 = 0.0, b1 = 0.0, b2 = 0.0, c12 = 0.0;
-float pressure = 0.0, cTemp = 0.0, fTemp = 0.0;
-float presComp = 0.0;
+double a1 = 0.0, b1 = 0.0, b2 = 0.0, c12 = 0.0;
+double pressure = 0.0, cTemp = 0.0, fTemp = 0.0;
+double presComp = 0.0;
 int temp = 0, pres = 0;
 
 void setup()
@@ -112,9 +112,9 @@ void loop()
 
   // Output data to dashboard
   Particle.publish("Pressure : ", String(pressure));
-  delay(100);
+  delay(1000);
   Particle.publish("Temperature in Celsius : ", String(cTemp));
-  delay(100);
+  delay(1000);
   Particle.publish("Temperature in Fahrenheit : ", String(fTemp));
   delay(1000);
 }
