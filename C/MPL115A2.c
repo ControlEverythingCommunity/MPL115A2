@@ -31,7 +31,7 @@ void main()
 	char data[8] = {0};
 	if(read(file, data, 8) != 8)
 	{
-		printf("Erorr : Input/output Erorr \n");
+		printf("Error : Input/Output error \n");
 		exit(1);
 	}
 
@@ -55,7 +55,7 @@ void main()
 	write(file, reg, 1);
 	if(read(file, data, 4) != 4)
 	{
-		printf("Erorr : Input/output Erorr \n");
+		printf("Error : Input/Output error \n");
 		exit(1);
 	}
 	else
@@ -73,7 +73,7 @@ void main()
 		float fTemp = cTemp * 1.8 + 32.0;
 	
 		// Output data to screen
-		printf("Pressure : %.2f kPa \n", pressure);
+		printf("Pressure is : %.2f kPa \n", pressure);
 		printf("Temperature in Celsius : %.2f C \n", cTemp);
 		printf("Temperature in Fahrenheit : %.2f F \n", fTemp);
 	}
