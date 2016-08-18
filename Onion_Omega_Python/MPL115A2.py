@@ -38,7 +38,7 @@ time.sleep(0.5)
 # MPL115A2 address, 0x60(96)
 # Read data back from 0x00(00), 4 bytes
 # pres MSB, pres LSB, temp MSB, temp LSB
-data = 2c.readBytes(0x60, 0x00, 4)
+data = i2c.readBytes(0x60, 0x00, 4)
 
 # Convert the data to 10-bits
 pres = ((data[0] * 256) + (data[1] & 0xC0)) / 64
